@@ -1,27 +1,39 @@
 = Middleman AsciiDoc Project Template
+Dan Allen <https://github.com/mojavelinux[@mojavelinux]>
+// Settings:
+:idprefix:
+:idseparator: -
+:hide-uri-scheme:
+ifndef::env-github[:icons: font]
+ifdef::env-github[]
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+endif::[]
+// URIs:
+:uri-asdf: https://github.com/asdf-vm/asdf
 :uri-middleman: https://middlemanapp.com
 :uri-middleman-asciidoc: https://github.com/middleman/middleman-asciidoc
 :uri-ruby: https://www.ruby-lang.org
 :uri-rvm: https://rvm.io
 
-This project is a {uri-middleman}[Middleman] project template pre-configured with the {uri-middleman-asciidoc}[Middleman AsciiDoc extension].
+A {uri-middleman}[Middleman] project template preconfigured to use the {uri-middleman-asciidoc}[Middleman AsciiDoc extension] for writing pages in AsciiDoc.
 
 == Prerequisites
 
 To use this template, you need {uri-ruby}[Ruby] >= 2.2 (command: `ruby`), git (command: `git`), and the Middleman CLI (command: `middleman`) installed.
 
-You don't need to clone this repository.
+TIP: You don't need to clone this repository.
 The Middleman CLI does that for you (which is why you need git installed).
 
 Middleman is built with Ruby, so the first software you'll need to install is Ruby.
-We strongly recommend using {uri-rvm}[RVM] to manage your Ruby installation.
+We strongly recommend using {uri-asdf}[asdf] or {uri-rvm}[RVM] to manage your Ruby installation.
 
-The next software you'll need is the Middleman CLI, which provides the `middleman` command.
+The next software you'll need to install is the Middleman CLI, which provides the `middleman` command.
 To install the Middleman CLI, run the following command:
 
  $ gem install middleman-core middleman-cli
  
-Now that you've got the `middleman` command, let's put it to use!
+Now that you have `middleman` at your command, let's put it to use!
 
 == Usage
 
