@@ -1,0 +1,53 @@
+= Middleman AsciiDoc Project Template
+:uri-middleman: https://middlemanapp.com
+:uri-middleman-asciidoc: https://github.com/middleman/middleman-asciidoc
+:uri-ruby: https://www.ruby-lang.org
+:uri-rvm: https://rvm.io
+
+This project is a {uri-middleman}[Middleman] project template pre-configured with the {uri-middleman-asciidoc}[Middleman AsciiDoc extension].
+
+== Prerequisites
+
+To use this template, you need {uri-ruby}[Ruby] >= 2.2 (command: `ruby`), git (command: `git`), and the Middleman CLI (command: `middleman`) installed.
+
+You don't need to clone this repository.
+The Middleman CLI does that for you (which is why you need git installed).
+
+Middleman is built with Ruby, so the first software you'll need to install is Ruby.
+We strongly recommend using {uri-rvm}[RVM] to manage your Ruby installation.
+
+The next software you'll need is the Middleman CLI, which provides the `middleman` command.
+To install the Middleman CLI, run the following command:
+
+ $ gem install middleman-core middleman-cli
+ 
+Now that you've got the `middleman` command, let's put it to use!
+
+== Usage
+
+To start, create a new folder for your site, then switch to it:
+
+ $ mkdir mysite
+   cd mysite
+
+Now you can use the Middleman CLI to initialize a new Middleman project from this template:
+
+ $ middleman init -T opendevise/middleman-templates-asciidoc -B
+
+NOTE: We've deferred the call to Bundler (the `-B` switch) to give ourselves more control over where gems are installed.
+We prefer to install gems into the current project.
+
+Now initialize your project in the normal way using Bundler:
+
+ $ bundle --path=.bundle/gems
+
+Now you can preview your site using the `middleman` command.
+
+ $ bundle exec middleman
+
+== Copyright and License
+
+Copyright (C) 2018 OpenDevise Inc. and the Asciidoctor Project.
+
+Use of this software is granted under the terms of the MIT License.
+See link:LICENSE[] to find the full license text.

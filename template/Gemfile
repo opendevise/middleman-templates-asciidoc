@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+gem 'middleman-core', '~> 4.2.1', require: false
+gem 'middleman-cli', '~> 4.2.1', require: false
+gem 'middleman-asciidoc', '~> 1.0.0', require: false
+#gem 'middleman-blog', '~> 4.0.2', require: false
+gem 'coderay', '~> 1.1.2', require: false
+gem 'slim', '~> 3.0.9', require: false
+gem 'tzinfo-data', platforms: [:x64_mingw, :mingw]
+gem 'wdm', '~> 0.1.1', platforms: [:x64_mingw, :mingw]
