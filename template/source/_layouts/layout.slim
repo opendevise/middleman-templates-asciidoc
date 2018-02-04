@@ -6,6 +6,8 @@ html lang='en'
     title = current_page.data.title
     - if (description = current_page.data.description || data.site.description)
       meta name='description' content=description
+    = (stylesheet_link_tag :site).sub(' type="text/css"', '').sub(' />', '>')
   body
     h1 = current_page.data.title
     = yield
+    = partial '_partials/footer'

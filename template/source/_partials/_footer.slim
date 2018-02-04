@@ -1,0 +1,3 @@
+= (javascript_include_tag :site).sub(' type="text/javascript"', '')
+- if app.extensions[:google_analytics]
+  = google_analytics_tag.sub(' type="text/javascript"', '')
