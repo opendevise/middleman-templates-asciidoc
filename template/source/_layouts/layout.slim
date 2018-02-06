@@ -15,6 +15,14 @@ html lang='en'
         = data.site.title
     - if (description = current_page.data.description || data.site.description)
       meta name='description' content=description
+    - if (author = current_page.data.author || data.site.author)
+      meta name='author' content=author
+    meta name='og:site_name' content=data.site.title
+    meta name='og:type' content='website'
+    meta name='og:title' content=(current_page.data.title || data.site.title)
+    - if description
+      meta name='og:description' content=description
+    meta name='og:url' content=%(#{data.site.url}#{current_page.url})
     link rel='icon' href=(asset_url 'favicon.ico') type='image/x-icon'
     = (stylesheet_link_tag :site).sub(' type="text/css"', '').sub(' />', '>')
   body
