@@ -6,7 +6,7 @@ html lang='en'
     title = current_page.data.title
     - if (description = current_page.data.description || data.site.description)
       meta name='description' content=description
-    link rel='shortcut icon' href=(asset_url 'favicon.ico') type='image/x-icon'
+    link rel='icon' href=(asset_url 'favicon.ico') type='image/x-icon'
     = (stylesheet_link_tag :site).sub(' type="text/css"', '').sub(' />', '>')
   body
     h1 = current_page.data.title
