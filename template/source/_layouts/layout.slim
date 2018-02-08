@@ -17,6 +17,8 @@ html lang='en'
       meta name='description' content=description
     - if (author = current_page.data.author || data.site.author)
       meta name='author' content=author
+    - if (keywords = current_page.data.keywords || data.site.keywords)
+      meta name='keywords' content=keywords
     meta name='og:site_name' content=data.site.title
     meta name='og:type' content='website'
     meta name='og:title' content=(current_page.data.title || data.site.title)

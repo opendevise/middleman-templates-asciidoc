@@ -2,4 +2,5 @@ title: Site Title
 url: https://example.org
 tagline: Concise and Catchy!
 description: A description of your site.
+keywords: middleman, asciidoc, asciidoctor
 #author: Your Name
