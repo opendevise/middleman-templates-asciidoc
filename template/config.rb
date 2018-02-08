@@ -32,6 +32,9 @@ activate :asciidoc do |asciidoc|
   asciidoc.attributes = attributes
 end
 
+# change /page.html to /page/ (i.e., indexify)
+#activate :directory_indexes
+
 # = Layouts
 # https://middlemanapp.com/basics/layouts/
 
