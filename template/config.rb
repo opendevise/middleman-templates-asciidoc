@@ -2,6 +2,10 @@
 # See data/site.yml for seed values
 ready do
   site_properties = app.data.site
+  # automatically configure url for preview server
+  if app.server?
+    site_properties.url = %(http#{config.https ? 's' : ''}://#{config.server_name || 'localhost'}:#{config.port})
+  end
 end
 
 # = Site structure
