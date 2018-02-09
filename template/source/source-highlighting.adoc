@@ -1,0 +1,23 @@
+= Source Highlighting
+
+Here's a source listing with syntax highlighting applied by CodeRay.
+
+[source,ruby]
+----
+PeriodRx = /\.(?= |$)/
+
+Asciidoctor::Extensions.register do
+  block :shout do
+    on_context :paragraph
+    parse_content_as :simple
+    name_attributes 'vol'
+    process do |parent, reader, attrs|
+      volume = ((attrs.delete 'vol') || 1).to_i
+      lines = reader.lines.map {|l| l.upcase.gsub PeriodRx, '!' * volume }
+      create_paragraph parent, lines, attrs
+    end
+  end
+end
+----
+
+Go back to <<index.adoc#,home>>.

@@ -1,3 +1,7 @@
 = Hello, World!
 
 You're looking at a page built from AsciiDoc source by the Middleman AsciiDoc extension in a site built by Middleman.
+
+Do you plan to put source code on your site?
+If so, you'll probably be interested in the pre-configured <<source-highlighting.adoc#,source highlighting>>.
+That was also a demonstration of an inter-page xref.
