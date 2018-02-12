@@ -27,7 +27,7 @@ activate :asciidoc do |asciidoc|
   # enable layout to use the same layout for all AsciiDoc pages
   #asciidoc.layout = :article
   # enable the following options to customize the HTML templates used to convert AsciiDoc content
-  #asciidoc.template_dirs = 'source/_asciidoc_templates'
+  #asciidoc.template_dirs = 'templates'
   #asciidoc.template_engine = :slim
   # configure the global AsciiDoc attributes here
   attributes = {
