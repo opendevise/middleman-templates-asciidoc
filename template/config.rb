@@ -44,10 +44,10 @@ end
 # https://middlemanapp.com/basics/layouts/
 
 # Per-page layout changes
+page '/', layout: 'home'
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
-#page '/', layout: 'home'
 
 # Page with alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
